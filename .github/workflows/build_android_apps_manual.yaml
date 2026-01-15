@@ -5,7 +5,8 @@ on:
 
 jobs:
   build-android-app:
-    runs-on: macos-latest
+
+    runs-on: ubuntu-22.04
     permissions:
       contents: write
     steps:
@@ -60,7 +61,7 @@ jobs:
       - run: echo "🍏 Android app job's status is ${{ job.status }}."
 
   build-android-tv-app:
-    runs-on: macos-latest
+    runs-on: ubuntu-22.04
     permissions:
       contents: write
     steps:
